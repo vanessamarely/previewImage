@@ -37,7 +37,7 @@ describe(" Preview2 Tests ", () => {
     expect(getByTestId("inputFile")).toBeTruthy();
   });
 
-  test.only(" Must distpatch a change event", async () => {
+  /*test.only(" Must distpatch a change event", async () => {
     // const container = document.createElement("div");
     const base = document.createElement("div");
     document.body.appendChild(base);
@@ -55,5 +55,5 @@ describe(" Preview2 Tests ", () => {
       
     });
     // expect(image).toHaveAttribute("src", "chucknorris.png");
-  });
+  });*/
 });
