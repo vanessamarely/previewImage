@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Preview } from "./components/Preview";
+import { Preview2 } from "./components/Preview2";
+import { providerImage } from "./previewImage";
 import './App.css';
 
 function App() {
+
+  const previewImage = () => providerImage();
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Preview imageprovider={previewImage} />
+      <Preview2 />
     </div>
   );
 }
